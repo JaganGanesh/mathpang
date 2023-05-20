@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script></script>
+    <style>
+      html {
+        height: 100%;
+      }
+      body {
+        min-height: 100%;
+        background-color: #EDEEF3;
+      }
+      .centerDiv {
+        height: 100vh;
+        position: relative;
+      }
+      .vertical-center {
+        margin: 0;
+        left: 38%;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centerDiv">
+      <div class="vertical-center">
+        <button onclick="sendDataToReactNativeApp()" style="background-color: #01B99F; padding: 9px 12px; border-radius: 10%; color: white; font-size: 12; font-weight: 500;">
+          Native Alert
+        </button>
+      </div>
+    </div>
+    <script>
+      const sendDataToReactNativeApp = async () => {
+        window.ReactNativeWebView.postMessage('Hello From JavaScript!');
+      };
+    </script>
+  </body>
+</html>
