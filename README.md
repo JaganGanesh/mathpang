@@ -5,3 +5,6 @@ JavaScript bridging in React Native using the `react-native-webview` package
 + Create all UI and Components from Scratch
 + Added `react-native-webview` library
 + Create JavaScript to React Native and React Native to JavaScript bridging
+
+---
+![JavaScript bridging in React Native](ezgif-4-61bbefd46e.gif)
