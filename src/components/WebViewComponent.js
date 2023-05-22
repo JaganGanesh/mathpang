@@ -29,7 +29,7 @@ const WebViewComponent = (props) => {
     alert(message);
   };
   const sendToJavaScript = event => {
-    alert('Sent from React Native');
+    alert('React Native!');
   };
   return (
     <View>
